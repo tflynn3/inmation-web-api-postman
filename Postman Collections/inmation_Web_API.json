@@ -1560,7 +1560,116 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "29f59453-7ef7-4b5c-a6f6-b1cb61da85d7",
+              "name": "Read Raw Historical Data Copy",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/v2/readrawhistoricaldata?start_time={{one_min_ago}}&end_time={{$isoTimestamp}}&identifier={{test_tag}}&identifier=/System/SC1MV366331/Performance Counter/Core/MemoryLoad&fields=t,v,q",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "readrawhistoricaldata"
+                  ],
+                  "query": [
+                    {
+                      "key": "start_time",
+                      "value": "{{one_min_ago}}",
+                      "description": "The start time (UTC) of the interval to retrieve data for."
+                    },
+                    {
+                      "key": "end_time",
+                      "value": "{{$isoTimestamp}}",
+                      "description": "The end time (UTC) of the interval to retrieve data for."
+                    },
+                    {
+                      "key": "identifier",
+                      "value": "{{test_tag}}",
+                      "description": "The path or ID of the object to be queried for historical information."
+                    },
+                    {
+                      "key": "identifier",
+                      "value": "/System/SC1MV366331/Performance Counter/Core/MemoryLoad",
+                      "type": "text"
+                    },
+                    {
+                      "key": "filter",
+                      "value": "{{filter}}",
+                      "description": "Filter query. Has to be a JSON (dictionary). In case of a HTTP GET the value of this URL query parameter must be Base64 encoded.",
+                      "disabled": true
+                    },
+                    {
+                      "key": "fields",
+                      "value": "t,v,q",
+                      "description": "Comma separated string to customize which fields should be included in the response, by default 'i,p,v,q,t'. Provide 'ALL' to include all fields."
+                    },
+                    {
+                      "key": "bounds",
+                      "value": null,
+                      "description": "A Boolean or number, which indicates bounding values should be returned, by default false. 0 / false = None, 1 / true = both start and end, 2 = only start, 3 = only end.",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "query_count_limit",
+                      "value": null,
+                      "description": "The maximum number of data points per query. Optional, by default 3000000.",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "query_index",
+                      "value": null,
+                      "description": "The index of the query to retrieve historical data for. In case a query index is provided, the query will be executed directly, without determining a strategy first",
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "insights",
+                      "value": null,
+                      "description": "Indicates application insights should be included in the response, by default false",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "763"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "deflate"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-HTTPAPI/2.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 11 Feb 2022 00:34:33 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": {\n        \"historical_data\": {\n            \"query_data\": [\n                {\n                    \"end_time\": \"2022-02-11T00:34:33.431Z\",\n                    \"items\": [\n                        {\n                            \"p\": \"/System/SC1MV366331/Performance Counter/Core/CPU\",\n                            \"q\": [\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0\n                            ],\n                            \"t\": [\n                                1644539614325,\n                                1644539615325,\n                                1644539616325,\n                                1644539617325,\n                                1644539618325,\n                                1644539619325,\n                                1644539620325,\n                                1644539621325,\n                                1644539622325,\n                                1644539623325,\n                                1644539624325,\n                                1644539625325,\n                                1644539626325,\n                                1644539627325,\n                                1644539628325,\n                                1644539629325,\n                                1644539630325,\n                                1644539631325,\n                                1644539632325,\n                                1644539633325,\n                                1644539634325,\n                                1644539635325,\n                                1644539636325,\n                                1644539637325,\n                                1644539638325,\n                                1644539639325,\n                                1644539640325,\n                                1644539641325,\n                                1644539642325,\n                                1644539643325,\n                                1644539644325,\n                                1644539645325,\n                                1644539646325,\n                                1644539647325,\n                                1644539648325,\n                                1644539649325,\n                                1644539650325,\n                                1644539651325,\n                                1644539652325,\n                                1644539653325,\n                                1644539654325,\n                                1644539655325,\n                                1644539656325,\n                                1644539657325,\n                                1644539658325,\n                                1644539659325,\n                                1644539660325,\n                                1644539661325,\n                                1644539662325,\n                                1644539663325,\n                                1644539664325,\n                                1644539665325,\n                                1644539666325,\n                                1644539667325,\n                                1644539668325,\n                                1644539669325,\n                                1644539670325,\n                                1644539671325,\n                                1644539672325\n                            ],\n                            \"v\": [\n                                47.8515625,\n                                55.46875,\n                                45.3125,\n                                47.4609375,\n                                46.484375,\n                                58.3984375,\n                                51.171875,\n                                47.5,\n                                47.61904761904761,\n                                59.375,\n                                45.5078125,\n                                48.6328125,\n                                44.53125,\n                                70.1171875,\n                                52.734375,\n                                51.953125,\n                                50.5859375,\n                                43.1640625,\n                                51.7578125,\n                                52.1484375,\n                                45.1171875,\n                                46.6796875,\n                                52.734375,\n                                35.546875,\n                                46.2890625,\n                                53.7109375,\n                                38.4765625,\n                                39.23076923076923,\n                                34.72222222222222,\n                                31.25,\n                                32.421875,\n                                33.203125,\n                                33.7890625,\n                                39.2578125,\n                                32.2265625,\n                                47.4609375,\n                                40.234375,\n                                48.046875,\n                                31.640625,\n                                31.25,\n                                29.296875,\n                                41.015625,\n                                30.6640625,\n                                35.9375,\n                                32.6171875,\n                                38.28125,\n                                30.2734375,\n                                38.8671875,\n                                39.453125,\n                                35.9375,\n                                35,\n                                43.25396825396825,\n                                33.3984375,\n                                32.03125,\n                                42.7734375,\n                                50,\n                                86.328125,\n                                76.171875,\n                                77.9296875\n                            ]\n                        },\n                        {\n                            \"p\": \"/System/SC1MV366331/Performance Counter/Core/MemoryLoad\",\n                            \"q\": [\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0\n                            ],\n                            \"t\": [\n                                1644539613678,\n                                1644539614678,\n                                1644539615678,\n                                1644539616678,\n                                1644539617678,\n                                1644539618678,\n                                1644539619678,\n                                1644539620678,\n                                1644539621678,\n                                1644539622678,\n                                1644539623678,\n                                1644539624678,\n                                1644539625678,\n                                1644539626678,\n                                1644539627678,\n                                1644539628678,\n                                1644539629678,\n                                1644539630678,\n                                1644539631678,\n                                1644539632678,\n                                1644539633678,\n                                1644539634678,\n                                1644539635678,\n                                1644539636678,\n                                1644539637678,\n                                1644539638678,\n                                1644539639678,\n                                1644539640678,\n                                1644539641678,\n                                1644539642678,\n                                1644539643678,\n                                1644539644678,\n                                1644539645678,\n                                1644539646678,\n                                1644539647678,\n                                1644539648678,\n                                1644539649678,\n                                1644539650678,\n                                1644539651678,\n                                1644539652678,\n                                1644539653678,\n                                1644539654678,\n                                1644539655678,\n                                1644539656678,\n                                1644539657678,\n                                1644539658678,\n                                1644539659678,\n                                1644539660678,\n                                1644539661678,\n                                1644539662678,\n                                1644539663678,\n                                1644539664678,\n                                1644539665678,\n                                1644539666678,\n                                1644539667678,\n                                1644539668678,\n                                1644539669678,\n                                1644539670678,\n                                1644539671678\n                            ],\n                            \"v\": [\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94,\n                                94\n                            ]\n                        }\n                    ],\n                    \"query_index\": \"1\",\n                    \"start_time\": \"2022-02-11T00:33:33.413Z\"\n                }\n            ]\n        }\n    }\n}"
+            }
+          ]
         }
       ],
       "id": "88cacfba-6d94-4469-87d5-9c451c362241",
@@ -1876,22 +1985,22 @@
   ],
   "variable": [
     {
-      "id": "64e9d507-c57d-40ed-99df-09c3130633c1",
+      "id": "e92b8df5-62f9-4218-a9af-084899c5ace7",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "266ffc83-7908-4643-929c-bc7c097785b9",
+      "id": "35c296ea-f745-47a3-a065-8abe2427a063",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "dd7f71e3-71e5-4618-a80c-5ce8d0e9e07b",
+      "id": "36937e12-48ac-4708-bf91-cf275492d9f9",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "913acb84-f4c9-4ff0-9368-0a8a29648c17",
+      "id": "f53bfca0-b940-44d7-9ec2-cae1c79925a5",
       "key": "access_token",
       "value": ""
     }
