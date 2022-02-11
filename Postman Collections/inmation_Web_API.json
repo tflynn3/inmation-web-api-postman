@@ -1562,110 +1562,6 @@
           },
           "response": [
             {
-              "id": "7d62b0d8-a69f-46d4-97a8-1a035ba9a901",
-              "name": "Read Raw Historical Data",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{base_url}}/api/v2/readrawhistoricaldata?start_time={{one_min_ago}}&end_time={{$isoTimestamp}}&identifier={{test_tag}}&fields=t,v,q",
-                  "host": [
-                    "{{base_url}}"
-                  ],
-                  "path": [
-                    "api",
-                    "v2",
-                    "readrawhistoricaldata"
-                  ],
-                  "query": [
-                    {
-                      "key": "start_time",
-                      "value": "{{one_min_ago}}",
-                      "description": "The start time (UTC) of the interval to retrieve data for."
-                    },
-                    {
-                      "key": "end_time",
-                      "value": "{{$isoTimestamp}}",
-                      "description": "The end time (UTC) of the interval to retrieve data for."
-                    },
-                    {
-                      "key": "identifier",
-                      "value": "{{test_tag}}",
-                      "description": "The path or ID of the object to be queried for historical information."
-                    },
-                    {
-                      "key": "filter",
-                      "value": null,
-                      "description": "Filter query. Has to be a JSON (dictionary). In case of a HTTP GET the value of this URL query parameter must be Base64 encoded.",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "fields",
-                      "value": "t,v,q",
-                      "description": "Comma separated string to customize which fields should be included in the response, by default 'i,p,v,q,t'. Provide 'ALL' to include all fields."
-                    },
-                    {
-                      "key": "bounds",
-                      "value": null,
-                      "description": "A Boolean or number, which indicates bounding values should be returned, by default false. 0 / false = None, 1 / true = both start and end, 2 = only start, 3 = only end.",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "query_count_limit",
-                      "value": null,
-                      "description": "The maximum number of data points per query. Optional, by default 3000000.",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "query_index",
-                      "value": null,
-                      "description": "The index of the query to retrieve historical data for. In case a query index is provided, the query will be executed directly, without determining a strategy first",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "insights",
-                      "value": null,
-                      "description": "Indicates application insights should be included in the response, by default false",
-                      "type": "text",
-                      "disabled": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Length",
-                  "value": "598"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "deflate"
-                },
-                {
-                  "key": "Server",
-                  "value": "Microsoft-HTTPAPI/2.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Thu, 10 Feb 2022 19:15:03 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"data\": {\n        \"historical_data\": {\n            \"query_data\": [\n                {\n                    \"end_time\": \"2022-02-10T19:15:03.870Z\",\n                    \"items\": [\n                        {\n                            \"p\": \"/System/SC1MV366331/Performance Counter/Core/CPU\",\n                            \"q\": [\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0\n                            ],\n                            \"t\": [\n                                1644520444325,\n                                1644520445325,\n                                1644520446325,\n                                1644520447325,\n                                1644520448325,\n                                1644520449325,\n                                1644520450325,\n                                1644520451325,\n                                1644520452325,\n                                1644520453325,\n                                1644520454325,\n                                1644520455325,\n                                1644520456325,\n                                1644520457325,\n                                1644520458325,\n                                1644520459325,\n                                1644520460325,\n                                1644520461325,\n                                1644520462325,\n                                1644520463325,\n                                1644520464325,\n                                1644520465325,\n                                1644520466325,\n                                1644520467325,\n                                1644520468325,\n                                1644520469325,\n                                1644520470325,\n                                1644520471325,\n                                1644520472325,\n                                1644520473325,\n                                1644520474325,\n                                1644520475325,\n                                1644520476325,\n                                1644520477325,\n                                1644520478325,\n                                1644520479325,\n                                1644520480325,\n                                1644520481325,\n                                1644520482325,\n                                1644520483325,\n                                1644520484325,\n                                1644520485325,\n                                1644520486325,\n                                1644520487325,\n                                1644520488325,\n                                1644520489325,\n                                1644520490325,\n                                1644520491325,\n                                1644520492325,\n                                1644520493325,\n                                1644520494325,\n                                1644520495325,\n                                1644520496325,\n                                1644520497325,\n                                1644520498325,\n                                1644520499325,\n                                1644520500325,\n                                1644520501325,\n                                1644520502325\n                            ],\n                            \"v\": [\n                                46.2890625,\n                                52.734375,\n                                49.0234375,\n                                43.9453125,\n                                53.125,\n                                60.3515625,\n                                53.3203125,\n                                41.9921875,\n                                53.125,\n                                38.4765625,\n                                31.73076923076923,\n                                31.547619047619049,\n                                31.8359375,\n                                45.1171875,\n                                44.53125,\n                                50.390625,\n                                54.4921875,\n                                52.9296875,\n                                51.171875,\n                                43.9453125,\n                                44.53125,\n                                46.09375,\n                                56.640625,\n                                47.4609375,\n                                46.09375,\n                                63.671875,\n                                90.0390625,\n                                89.2578125,\n                                65.625,\n                                57.6171875,\n                                69.53125,\n                                58.7890625,\n                                59.765625,\n                                66.2109375,\n                                64.60348162475822,\n                                66.66666666666666,\n                                58.7890625,\n                                66.2109375,\n                                65.8203125,\n                                58.7890625,\n                                54.4921875,\n                                53.90625,\n                                46.484375,\n                                61.1328125,\n                                51.171875,\n                                66.6015625,\n                                58.59375,\n                                59.9609375,\n                                66.796875,\n                                59.9609375,\n                                55.859375,\n                                49.4140625,\n                                44.7265625,\n                                48.046875,\n                                57.421875,\n                                57.421875,\n                                51.7578125,\n                                43.75,\n                                53.515625\n                            ]\n                        }\n                    ],\n                    \"query_index\": \"1\",\n                    \"start_time\": \"2022-02-10T19:14:03.851Z\"\n                }\n            ]\n        }\n    }\n}"
-            },
-            {
               "id": "604afaae-6594-4028-83b0-c04583c6402b",
               "name": "Read Raw Historical Data > 70% Filter",
               "originalRequest": {
@@ -2083,22 +1979,22 @@
   ],
   "variable": [
     {
-      "id": "979238ca-cb0a-4f87-bd5e-7d84a6669ed0",
+      "id": "8d5bdd44-1fda-4cfd-9f05-4412af7f108f",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "76ad8e70-3a78-4847-b24c-506a627923d0",
+      "id": "b0ee2783-cdee-419d-9401-14d8d16430ca",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "d6b64f31-a799-4380-9ac7-c745f2e082e1",
+      "id": "8387426c-a113-4cd3-ac2d-4c52c97f8c44",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "6d35d708-2326-49cf-b365-bc90b83ed4e7",
+      "id": "1c8b0c97-255a-4cbe-b88c-d265b05aa65f",
       "key": "access_token",
       "value": ""
     }
