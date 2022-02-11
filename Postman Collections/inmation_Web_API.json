@@ -1560,110 +1560,7 @@
               ]
             }
           },
-          "response": [
-            {
-              "id": "604afaae-6594-4028-83b0-c04583c6402b",
-              "name": "Read Raw Historical Data > 70% Filter",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{base_url}}/api/v2/readrawhistoricaldata?start_time={{one_min_ago}}&end_time={{$isoTimestamp}}&identifier={{test_tag}}&filter={{filter}}&fields=t,v,q",
-                  "host": [
-                    "{{base_url}}"
-                  ],
-                  "path": [
-                    "api",
-                    "v2",
-                    "readrawhistoricaldata"
-                  ],
-                  "query": [
-                    {
-                      "key": "start_time",
-                      "value": "{{one_min_ago}}",
-                      "description": "The start time (UTC) of the interval to retrieve data for."
-                    },
-                    {
-                      "key": "end_time",
-                      "value": "{{$isoTimestamp}}",
-                      "description": "The end time (UTC) of the interval to retrieve data for."
-                    },
-                    {
-                      "key": "identifier",
-                      "value": "{{test_tag}}",
-                      "description": "The path or ID of the object to be queried for historical information."
-                    },
-                    {
-                      "key": "filter",
-                      "value": "{{filter}}",
-                      "description": "Filter query. Has to be a JSON (dictionary). In case of a HTTP GET the value of this URL query parameter must be Base64 encoded."
-                    },
-                    {
-                      "key": "fields",
-                      "value": "t,v,q",
-                      "description": "Comma separated string to customize which fields should be included in the response, by default 'i,p,v,q,t'. Provide 'ALL' to include all fields."
-                    },
-                    {
-                      "key": "bounds",
-                      "value": null,
-                      "description": "A Boolean or number, which indicates bounding values should be returned, by default false. 0 / false = None, 1 / true = both start and end, 2 = only start, 3 = only end.",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "query_count_limit",
-                      "value": null,
-                      "description": "The maximum number of data points per query. Optional, by default 3000000.",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "query_index",
-                      "value": null,
-                      "description": "The index of the query to retrieve historical data for. In case a query index is provided, the query will be executed directly, without determining a strategy first",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "insights",
-                      "value": null,
-                      "description": "Indicates application insights should be included in the response, by default false",
-                      "type": "text",
-                      "disabled": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Length",
-                  "value": "258"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "deflate"
-                },
-                {
-                  "key": "Server",
-                  "value": "Microsoft-HTTPAPI/2.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Thu, 10 Feb 2022 19:35:06 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"data\": {\n        \"historical_data\": {\n            \"query_data\": [\n                {\n                    \"end_time\": \"2022-02-10T19:35:06.850Z\",\n                    \"items\": [\n                        {\n                            \"p\": \"/System/SC1MV366331/Performance Counter/Core/CPU\",\n                            \"q\": [\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0,\n                                0\n                            ],\n                            \"t\": [\n                                1644521669325,\n                                1644521670325,\n                                1644521671325,\n                                1644521674325,\n                                1644521675325,\n                                1644521676325,\n                                1644521686325,\n                                1644521687325\n                            ],\n                            \"v\": [\n                                74.21875,\n                                74.8046875,\n                                72.65625,\n                                71.2890625,\n                                89.6484375,\n                                90.625,\n                                71.96078431372549,\n                                73.6328125\n                            ]\n                        }\n                    ],\n                    \"query_index\": \"1\",\n                    \"start_time\": \"2022-02-10T19:34:06.822Z\"\n                }\n            ]\n        }\n    }\n}"
-            }
-          ]
+          "response": []
         }
       ],
       "id": "88cacfba-6d94-4469-87d5-9c451c362241",
@@ -1979,22 +1876,22 @@
   ],
   "variable": [
     {
-      "id": "63cd944f-b1a3-4afb-89f7-59439a732da7",
+      "id": "6a23efbf-9dcc-4a75-ade2-ac68918c2116",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "3dd07c32-fe9c-4d3c-bdad-360cf428fb16",
+      "id": "5f4b2333-c85c-402d-9edc-004a8b1baf4a",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "be7d2694-2756-465c-8379-e2bc7030fb4d",
+      "id": "85d8a0c8-edfb-4387-991d-706926030864",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "71002b45-ee59-49f8-ad0b-77cf8541069b",
+      "id": "4f60b9b8-2792-4d98-8345-7c40cd210a54",
       "key": "access_token",
       "value": ""
     }
