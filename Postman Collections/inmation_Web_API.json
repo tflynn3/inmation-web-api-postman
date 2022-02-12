@@ -1923,7 +1923,7 @@
           ]
         },
         {
-          "name": "Custom Endpoint Example Copy",
+          "name": "Get Datasource Children",
           "id": "626ef9dc-c527-47d0-8808-9b0d581c8534",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -2007,22 +2007,22 @@
   ],
   "variable": [
     {
-      "id": "166fa825-90ae-49c1-b8af-2729c634ea75",
+      "id": "2658ed9f-c87c-412c-84c8-cecbf1b10324",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "212a42e2-2fc1-4ad3-951c-767150ce890d",
+      "id": "5426f540-b128-42b3-a5a7-9c8f864ba696",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "07adf07c-a0f6-4ef0-ad38-c6f8013ce94c",
+      "id": "5a7e0c0d-46bd-48f1-8f82-54ddd667d06e",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "7d1e5011-250e-40f2-a15d-f20432ac07fe",
+      "id": "29032df9-95a0-4e37-9bf8-ea5e558e23da",
       "key": "access_token",
       "value": ""
     }
