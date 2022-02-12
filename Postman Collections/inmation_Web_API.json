@@ -1942,54 +1942,7 @@
             },
             "url": "{{base_url}}/api/v2/execfunction"
           },
-          "response": [
-            {
-              "id": "c2dc9f25-a340-4419-8d76-3193b6196241",
-              "name": "Custom Endpoint Example",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"data\": {\r\n    \"lib\": \"hello\",\r\n    \"func\": \"say_hello\",\r\n    \"farg\" : {\r\n        \"name\" : \"Tom\"\r\n    }\r\n  }\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{base_url}}/api/v2/execfunction"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Length",
-                  "value": "53"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "deflate"
-                },
-                {
-                  "key": "Server",
-                  "value": "Microsoft-HTTPAPI/2.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Thu, 10 Feb 2022 22:09:07 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"data\": [\n        {\n            \"p\": \"/WebAPIServer\",\n            \"v\": \"Hello Tom\",\n            \"q\": 0\n        }\n    ]\n}"
-            }
-          ]
+          "response": []
         }
       ],
       "id": "9d2625b2-f645-4660-a68c-cd48592f5c84"
@@ -2054,22 +2007,22 @@
   ],
   "variable": [
     {
-      "id": "caa29274-f97c-4381-93b6-9240b4195390",
+      "id": "e88c113a-ecaa-45e9-9f39-0d793dfbfe6e",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "0997114d-e13d-4188-8676-b3b2c9a22ed4",
+      "id": "49c7c77a-924e-418b-b537-ee415c27b44b",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "65476458-c274-47cf-8a6a-28e5d87c4db4",
+      "id": "9c9c8a1b-6b8a-4f65-a162-c448a1871dc6",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "1667c99c-ea58-47b6-8f5e-c14cfba5be67",
+      "id": "cc978964-da9b-4190-af79-b7eeee89340a",
       "key": "access_token",
       "value": ""
     }
