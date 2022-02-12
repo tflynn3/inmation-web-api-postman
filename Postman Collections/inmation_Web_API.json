@@ -1921,6 +1921,75 @@
               "body": "{\n    \"data\": [\n        {\n            \"p\": \"/WebAPIServer\",\n            \"v\": \"Hello Tom\",\n            \"q\": 0\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "name": "Custom Endpoint Example Copy",
+          "id": "626ef9dc-c527-47d0-8808-9b0d581c8534",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"data\": {\r\n    \"lib\": \"hello\",\r\n    \"func\": \"say_hello\",\r\n    \"farg\" : {\r\n        \"name\" : \"Tom\"\r\n    }\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/api/v2/execfunction"
+          },
+          "response": [
+            {
+              "id": "c2dc9f25-a340-4419-8d76-3193b6196241",
+              "name": "Custom Endpoint Example",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"data\": {\r\n    \"lib\": \"hello\",\r\n    \"func\": \"say_hello\",\r\n    \"farg\" : {\r\n        \"name\" : \"Tom\"\r\n    }\r\n  }\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/api/v2/execfunction"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "53"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "deflate"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-HTTPAPI/2.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 10 Feb 2022 22:09:07 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": [\n        {\n            \"p\": \"/WebAPIServer\",\n            \"v\": \"Hello Tom\",\n            \"q\": 0\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "9d2625b2-f645-4660-a68c-cd48592f5c84"
@@ -1985,22 +2054,22 @@
   ],
   "variable": [
     {
-      "id": "ba8c630d-c98e-487f-aa2f-a7c2d26e93c9",
+      "id": "e7ebe4b5-8c98-4c94-9e4b-1cd4c16a5a66",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "9c1cee74-f244-4767-a112-4eceb024e902",
+      "id": "73cf11fa-15a9-4b31-98e4-73bf548eb996",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "ea9f8d97-36b3-41f1-9766-c28f72b62380",
+      "id": "7a6b29b6-15d3-4beb-bca1-19489b6e3ed2",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "5291bad5-e7d8-411e-bbb2-9e2201426dcd",
+      "id": "1ae40fed-024f-4184-a51d-a0be9da9326c",
       "key": "access_token",
       "value": ""
     }
