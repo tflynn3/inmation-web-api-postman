@@ -1716,7 +1716,54 @@
             "header": [],
             "url": null
           },
-          "response": []
+          "response": [
+            {
+              "id": "62f53e3f-b42d-4a0d-a967-be19b0e95ae7",
+              "name": "New Request",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"items\": [\r\n    {\r\n      \"p\": \"/System/SC1MV366331/SC1MV366331/test/test\",\r\n      \"v\": 10,\r\n      \"t\": \"2022-02-16T17:06:33.599Z\"\r\n    }\r\n  ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/api/v2/write"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "102"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "deflate"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-HTTPAPI/2.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 16 Feb 2022 17:42:13 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": [\n        {\n            \"i\": 281723438039040,\n            \"p\": \"/System/SC1MV366331/SC1MV366331/test/test\",\n            \"t\": \"2022-02-16T17:06:33.599Z\",\n            \"v\": 10\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "a537e0a7-86dd-4f71-9bd8-20e604276a16"
@@ -2089,22 +2136,22 @@
   ],
   "variable": [
     {
-      "id": "41d1f148-6b7d-4a5f-8cff-c0415caea206",
+      "id": "ebe62f6a-6a87-4518-b86e-b7a6520182a1",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "1ce8e570-7dff-4ab1-8d6a-2c1dc9512b14",
+      "id": "d218a7fc-9132-4f5e-b389-f6b9eea2e1f0",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "003f1d22-b47e-4904-8fb0-323d6c05690b",
+      "id": "c04330cf-bd34-43a5-bbe2-93719ff57ce7",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "9ecef57e-d122-4440-addb-a0d1bc01e001",
+      "id": "ce86e5f0-6b4b-4ce3-9a06-a5c1f63effe6",
       "key": "access_token",
       "value": ""
     }
