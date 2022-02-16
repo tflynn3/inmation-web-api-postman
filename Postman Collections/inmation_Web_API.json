@@ -2005,7 +2005,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "f8e36332-0f55-4e74-80e8-f288d29457f6",
+        "id": "346e85c2-5e2d-41b3-ac6a-a3f403e74f6a",
         "type": "text/javascript",
         "exec": [
           "const tokenUrl = pm.environment.get(\"base_url\") + \"/api/oauth2/token\";",
@@ -2044,7 +2044,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "55488a06-3e6c-4c82-8e88-e0ce5eb83e7d",
+        "id": "849cd21b-ec22-4563-9ad5-1bd838dd83bb",
         "type": "text/javascript",
         "exec": [
           ""
@@ -2054,27 +2054,27 @@
   ],
   "variable": [
     {
-      "id": "2731a278-a67d-45d2-a09b-8ac63c79fc10",
+      "id": "34be5d67-fa1d-4c6d-9cf2-25e4f88ff4c1",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "8bb4b99b-1da4-4ec8-a566-0965a0ec6a8c",
+      "id": "714c812f-47b2-420b-8c9f-39f4a206f480",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "23bcbdd5-cc41-4dc8-a549-f9dba77c6ae5",
+      "id": "e17dc36a-ae85-4e8d-98d1-b30e648d3642",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "4de1417a-3da6-4753-b290-f36ab2cd11a0",
+      "id": "366999f0-c9ee-4079-b445-a992583a6a58",
       "key": "access_token",
       "value": ""
     },
     {
-      "id": "39251e43-6ffe-4417-897c-abff5406afb9",
+      "id": "75ed7b50-32b1-459d-a2cb-f5592b0a0055",
       "key": "access_token",
       "value": ""
     }
