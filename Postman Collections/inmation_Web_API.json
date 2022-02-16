@@ -1712,14 +1712,23 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"items\": [\r\n    {\r\n      \"p\": \"/System/SC1MV366331/SC1MV366331/test/test\",\r\n      \"v\": 10,\r\n      \"t\": \"2022-02-16T17:06:33.599Z\"\r\n    }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/api/v2/write"
           },
           "response": [
             {
               "id": "62f53e3f-b42d-4a0d-a967-be19b0e95ae7",
-              "name": "New Request",
+              "name": "Write to Item",
               "originalRequest": {
                 "method": "POST",
                 "header": [],
@@ -2136,22 +2145,22 @@
   ],
   "variable": [
     {
-      "id": "ea5a7fda-91b7-4de2-ac12-d67501bbd706",
+      "id": "1f83bae4-ee67-4cdf-9cfa-b59ddc74a3a9",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "41e75a1c-7c71-47c9-a318-b431f9feffc1",
+      "id": "4a1c0764-a899-4102-9df6-68a8f3533ca4",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "7add15d7-e267-4ef3-8a0a-353899cbad7e",
+      "id": "12d4cfc5-38d5-4ac1-8209-8485d7b8ec9a",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "cdbf9671-6c64-491f-93c0-c0f24e6d106e",
+      "id": "303c6f36-b3f9-4ed9-a338-35f64b537bf8",
       "key": "access_token",
       "value": ""
     }
