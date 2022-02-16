@@ -1932,13 +1932,29 @@
             "method": "POST",
             "header": [],
             "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"data\": {\r\n    \"lib\": \"utils\",\r\n    \"func\": \"get_datasource_children\",\r\n    \"farg\" : {\r\n        \"data_source_name\" : \"rbamwmba70208\"\r\n    }\r\n  }\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "authority",
+                  "value": "builtin",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "so",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "optics",
+                  "type": "text"
                 }
-              }
+              ]
             },
             "url": "{{base_url}}/api/v2/execfunction"
           },
@@ -2054,48 +2070,53 @@
   ],
   "variable": [
     {
-      "id": "40f64716-31b3-461b-9ff3-d8707061de4f",
+      "id": "d4b53ff3-90a2-46be-ad54-a2b2f90088ae",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "ff7e24e8-b0d9-4ec3-92e7-744909838132",
+      "id": "da706606-24e5-419a-a82b-924a8de958a8",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "4bf603cf-cfe3-4d3f-8db6-87127fb13eea",
+      "id": "5a15ab56-4b25-4265-825e-419bf2293733",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "7d23e151-99d7-47a1-8b6c-c34650817955",
+      "id": "b12c6660-0ddf-4857-9491-de2b1302fa66",
       "key": "access_token",
       "value": ""
     },
     {
-      "id": "65d6f2bf-203a-4628-b7c1-557a1e621c0c",
+      "id": "98379d27-be56-4936-bde3-f6978ffbe175",
       "key": "grant_type",
       "value": "",
       "type": "string"
     },
     {
-      "id": "b34f0055-ed76-459c-8fe7-8d8204539920",
+      "id": "083ebe12-811e-490a-b376-08cf162028de",
       "key": "authority",
       "value": "",
       "type": "string"
     },
     {
-      "id": "eb635ba3-b93f-458c-80d1-81d1d27d26ef",
+      "id": "af0809d5-1d99-405b-a95e-ed476197689e",
       "key": "username",
       "value": "",
       "type": "string"
     },
     {
-      "id": "f23a0141-95c6-468e-a8f5-b3cef0594ecb",
+      "id": "21e4847b-4f51-4bb8-a858-3026a7e514f4",
       "key": "password",
       "value": "",
       "type": "string"
+    },
+    {
+      "id": "03b71292-30c1-4b02-9d62-04b1a7bff7f2",
+      "key": "access_token",
+      "value": ""
     }
   ]
 }
