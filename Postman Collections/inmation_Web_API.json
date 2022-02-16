@@ -2023,38 +2023,36 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "00555724-7b3e-4e1e-bc3a-243467dee035",
+        "id": "7504a167-4146-493e-9be5-4448024ca78b",
         "type": "text/javascript",
         "exec": [
-          "const tokenUrl = pm.environment.get(\"base_url\") + \"/api/oauth2/token\";",
-          "const domain = pm.collectionVariables.get(\"user_domain\");",
-          "const username = pm.collectionVariables.get(\"user_name\");",
-          "const password = pm.collectionVariables.get(\"user_password\");",
-          "console.log(domain + \"\\\\\" + username);",
+          "const tokenUrl = pm.environment.get(\"base_url\") + \"/api/oauth2/token\";",
+          "const domain = pm.collectionVariables.get(\"user_domain\");",
+          "const username = pm.collectionVariables.get(\"user_name\");",
+          "const password = pm.collectionVariables.get(\"user_password\");",
+          "console.log(domain + \"\\\\\" + username);",
           "",
-          "",
-          "const getTokenRequest = {",
-          "  method: 'POST',",
-          "  url: tokenUrl,",
-          "  headers: {",
-          "    'Content-Type': 'application/x-www-form-urlencoded'",
-          "  },",
-          "  body: {",
-          "      mode: 'urlencoded',",
-          "      urlencoded: [",
-          "          { key: 'grant_type', value: 'password' },",
-          "          { key: 'authority', value: 'builtin' },",
-          "          { key: 'username', value: 'so' },",
-          "          { key: 'password', value: 'optics' }",
-          "      ]",
-          "  }",
+          "const getTokenRequest = {",
+          "  method: 'POST',",
+          "  url: tokenUrl,",
+          "  headers: {",
+          "    'Content-Type': 'application/x-www-form-urlencoded'",
+          "  },",
+          "  body: {",
+          "      mode: 'urlencoded',",
+          "      urlencoded: [",
+          "          { key: 'grant_type', value: 'password' },",
+          "          { key: 'authority', value: 'ad' },",
+          "          { key: 'username', value: domain + \"\\\\\" + username },",
+          "          { key: 'password', value: password }",
+          "      ]",
+          "  }",
           "};",
-          "",
-          "pm.sendRequest(getTokenRequest, (err, response) => {",
-          "  const jsonResponse = response.json();",
-          "  const newAccessToken = jsonResponse.access_token;",
-          "    console.log(newAccessToken);",
-          "  pm.collectionVariables.set('access_token', newAccessToken);",
+          "pm.sendRequest(getTokenRequest, (err, response) => {",
+          "  const jsonResponse = response.json();",
+          "  const newAccessToken = jsonResponse.access_token;",
+          "    console.log(newAccessToken);",
+          "  pm.collectionVariables.set('access_token', newAccessToken);",
           "});"
         ]
       }
@@ -2062,7 +2060,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "42b15207-58c5-420a-bf49-2452907502e6",
+        "id": "c1a130d0-e556-4f0d-9ec0-4aa87530160f",
         "type": "text/javascript",
         "exec": [
           ""
@@ -2072,22 +2070,22 @@
   ],
   "variable": [
     {
-      "id": "a76b8e5f-2c8a-4661-9112-7146732c2ca0",
+      "id": "2cf0f6da-8a5e-47b3-9de0-3ef53144d6ba",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "4848acb4-ac0d-478b-a904-69daf86e5c3c",
+      "id": "9a68f8d5-8e10-4ab8-bece-ca138b2adea8",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "99bdc6f3-60aa-4483-8f62-c4298217a6d8",
+      "id": "fd5e5446-177d-417d-af3e-5e5622c7d7d1",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "dbe57e2d-f9f0-46fc-8a98-f2f77d87c7a7",
+      "id": "b0acfff1-9569-4e41-a0c1-0b784800554f",
       "key": "access_token",
       "value": ""
     }
