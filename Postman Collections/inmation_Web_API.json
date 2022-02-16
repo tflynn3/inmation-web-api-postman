@@ -138,18 +138,20 @@
                 },
                 {
                   "key": "authority",
-                  "value": "ad",
+                  "value": "builtin",
                   "type": "text"
                 },
                 {
                   "key": "username",
-                  "value": "{{user_domain}}\\{{user_name}}",
-                  "type": "text"
+                  "value": "so",
+                  "type": "text",
+                  "description": "{{user_domain}}\\{{user_name}}"
                 },
                 {
                   "key": "password",
-                  "value": "{{user_password}}",
-                  "type": "text"
+                  "value": "optics",
+                  "type": "text",
+                  "description": "{{user_password}}"
                 },
                 {
                   "key": "include_claims",
@@ -1932,13 +1934,29 @@
             "method": "POST",
             "header": [],
             "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"data\": {\r\n    \"lib\": \"utils\",\r\n    \"func\": \"get_datasource_children\",\r\n    \"farg\" : {\r\n        \"data_source_name\" : \"rbamwmba70208\"\r\n    }\r\n  }\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "authority",
+                  "value": "builtin",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "so",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "optics",
+                  "type": "text"
                 }
-              }
+              ]
             },
             "url": "{{base_url}}/api/v2/execfunction"
           },
@@ -2005,7 +2023,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "ea573b0c-3908-4e5f-85ae-4c041fbfc45e",
+        "id": "67dd1832-4923-4941-9327-7be51bdc4189",
         "type": "text/javascript",
         "exec": [
           "const tokenUrl = pm.environment.get(\"base_url\") + \"/api/oauth2/token\";",
@@ -2044,7 +2062,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "a94d54c7-6e8a-4856-98e5-c67761d5c763",
+        "id": "5559db85-9860-4c0e-aeac-f22c3cafa285",
         "type": "text/javascript",
         "exec": [
           ""
@@ -2054,51 +2072,22 @@
   ],
   "variable": [
     {
-      "id": "23c8501b-a984-4cca-bdd0-05a1e4f1c318",
+      "id": "32ebd6c1-a9d3-4865-b6d4-53167e7b50a3",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "72e4ee9c-ec64-4f8c-a239-3cf262e0a870",
+      "id": "f49f803e-c35e-4512-a0b5-d0353fe28f52",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "0297d786-e07b-4400-94f9-010079974738",
+      "id": "bff3ec19-a3b4-46b0-9797-16278a75d779",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "d256b6bf-9994-40df-940c-19e40a6dbd78",
-      "key": "access_token",
-      "value": ""
-    },
-    {
-      "id": "bb97d43d-468f-4ffe-b234-48c2d0a419a6",
-      "key": "grant_type",
-      "value": "",
-      "type": "string"
-    },
-    {
-      "id": "f7c25954-10c8-4ff1-95d3-fcd58e6ba237",
-      "key": "authority",
-      "value": "",
-      "type": "string"
-    },
-    {
-      "id": "53567e69-5d61-415a-953f-ab4fc79edcbe",
-      "key": "username",
-      "value": "",
-      "type": "string"
-    },
-    {
-      "id": "debeccf0-2775-42d6-9ed9-68df4b0a7912",
-      "key": "password",
-      "value": "",
-      "type": "string"
-    },
-    {
-      "id": "d418b384-881f-4d7c-9435-9fab31059551",
+      "id": "b6cf826b-df89-4cc5-b973-39d1a06a04af",
       "key": "access_token",
       "value": ""
     }
