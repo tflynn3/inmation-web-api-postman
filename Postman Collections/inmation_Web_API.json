@@ -1706,7 +1706,7 @@
       "name": "Write Data",
       "item": [
         {
-          "name": "New Request",
+          "name": "Write to Item",
           "id": "86558eca-3192-42aa-afbf-ea310190c34c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -2136,22 +2136,22 @@
   ],
   "variable": [
     {
-      "id": "ac477f7f-2d5f-4e77-b6ac-06873b65e326",
+      "id": "ea5a7fda-91b7-4de2-ac12-d67501bbd706",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "abe43011-0891-439b-8c28-e798d70c792e",
+      "id": "41e75a1c-7c71-47c9-a318-b431f9feffc1",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "625cc4b6-cdeb-44bf-8d7e-f938aaf8c34c",
+      "id": "7add15d7-e267-4ef3-8a0a-353899cbad7e",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "ef2e1755-9582-4143-84fd-8c068e011fd2",
+      "id": "cdbf9671-6c64-491f-93c0-c0f24e6d106e",
       "key": "access_token",
       "value": ""
     }
