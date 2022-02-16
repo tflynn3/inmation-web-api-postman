@@ -1704,7 +1704,21 @@
     },
     {
       "name": "Write Data",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "86558eca-3192-42aa-afbf-ea310190c34c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
+        }
+      ],
       "id": "a537e0a7-86dd-4f71-9bd8-20e604276a16"
     },
     {
@@ -2075,22 +2089,22 @@
   ],
   "variable": [
     {
-      "id": "0385f363-f670-4a52-b5ca-e7f9854f22dd",
+      "id": "d3fb5ed3-1cc7-4143-ad1a-a2995dc78c9d",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "9e7913da-e1bb-4806-9f48-ac78b4ccaa6f",
+      "id": "40b4da02-6a9a-4888-9648-b34c35ce2181",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "8071051c-5cc6-45d9-ad63-e78c77a976a9",
+      "id": "ff47e39b-8bc9-466a-bfc1-f74c18b977e1",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "207da5e0-58fd-42ee-bbd4-2776b3b5c59c",
+      "id": "660fbbab-f168-470e-a986-2b9dc5bcb34a",
       "key": "access_token",
       "value": ""
     }
