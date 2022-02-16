@@ -1932,29 +1932,13 @@
             "method": "POST",
             "header": [],
             "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "grant_type",
-                  "value": "password",
-                  "type": "text"
-                },
-                {
-                  "key": "authority",
-                  "value": "builtin",
-                  "type": "text"
-                },
-                {
-                  "key": "username",
-                  "value": "so",
-                  "type": "text"
-                },
-                {
-                  "key": "password",
-                  "value": "optics",
-                  "type": "text"
+              "mode": "raw",
+              "raw": "{\r\n  \"data\": {\r\n    \"lib\": \"utils\",\r\n    \"func\": \"get_datasource_children\",\r\n    \"farg\" : {\r\n        \"data_source_name\" : \"rbamwmba70208\"\r\n    }\r\n  }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
                 }
-              ]
+              }
             },
             "url": "{{base_url}}/api/v2/execfunction"
           },
@@ -2021,7 +2005,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "67dd1832-4923-4941-9327-7be51bdc4189",
+        "id": "ea573b0c-3908-4e5f-85ae-4c041fbfc45e",
         "type": "text/javascript",
         "exec": [
           "const tokenUrl = pm.environment.get(\"base_url\") + \"/api/oauth2/token\";",
@@ -2060,7 +2044,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "5559db85-9860-4c0e-aeac-f22c3cafa285",
+        "id": "a94d54c7-6e8a-4856-98e5-c67761d5c763",
         "type": "text/javascript",
         "exec": [
           ""
@@ -2070,22 +2054,51 @@
   ],
   "variable": [
     {
-      "id": "53f82352-9a6e-4c44-bac5-b5325b71310f",
+      "id": "23c8501b-a984-4cca-bdd0-05a1e4f1c318",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "820fc5e1-9e33-4912-b6a5-40f7502e19ec",
+      "id": "72e4ee9c-ec64-4f8c-a239-3cf262e0a870",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "a92514af-5615-4c89-8ced-5a7a13da9180",
+      "id": "0297d786-e07b-4400-94f9-010079974738",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "352ff734-f6bf-4816-bec4-c436e1ff39f4",
+      "id": "d256b6bf-9994-40df-940c-19e40a6dbd78",
+      "key": "access_token",
+      "value": ""
+    },
+    {
+      "id": "bb97d43d-468f-4ffe-b234-48c2d0a419a6",
+      "key": "grant_type",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "f7c25954-10c8-4ff1-95d3-fcd58e6ba237",
+      "key": "authority",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "53567e69-5d61-415a-953f-ab4fc79edcbe",
+      "key": "username",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "debeccf0-2775-42d6-9ed9-68df4b0a7912",
+      "key": "password",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "d418b384-881f-4d7c-9435-9fab31059551",
       "key": "access_token",
       "value": ""
     }
