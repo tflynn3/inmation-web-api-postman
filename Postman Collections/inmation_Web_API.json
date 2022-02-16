@@ -2011,6 +2011,11 @@
         }
       ],
       "id": "9d2625b2-f645-4660-a68c-cd48592f5c84"
+    },
+    {
+      "name": "New Folder",
+      "item": [],
+      "id": "a537e0a7-86dd-4f71-9bd8-20e604276a16"
     }
   ],
   "auth": {
@@ -2070,22 +2075,22 @@
   ],
   "variable": [
     {
-      "id": "2cf0f6da-8a5e-47b3-9de0-3ef53144d6ba",
+      "id": "72b6c544-1bd7-4d04-92d3-60802975c755",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "9a68f8d5-8e10-4ab8-bece-ca138b2adea8",
+      "id": "81d1d3bd-9a5d-4035-8828-538d57e0b7f5",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "fd5e5446-177d-417d-af3e-5e5622c7d7d1",
+      "id": "4bf0e4c3-8f21-4e5d-8d5a-dfd426fc2f01",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "b0acfff1-9569-4e41-a0c1-0b784800554f",
+      "id": "33c2d5d2-28d9-41bd-9bc7-686635c872ca",
       "key": "access_token",
       "value": ""
     }
