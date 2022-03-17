@@ -2104,7 +2104,50 @@
             },
             "url": "{{base_url}}/api/v2/execfunction"
           },
-          "response": []
+          "response": [
+            {
+              "id": "9e70aecc-9f0b-42ba-8877-260b3df6af86",
+              "name": "Create New Avant",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"data\": {\r\n        \"func\": \"new_avant_opc_da\",\r\n        \"farg\": {\r\n            \"core_name\": \"sc1mv366331\",\r\n            \"connector_name\": \"sc1mv366331\",\r\n            \"hostname\": \"LABDTSG74724VT\"\r\n        },\r\n        \"lib\": \"avantIntegration\"\r\n    }\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/api/v2/execfunction"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "46"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-HTTPAPI/2.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 17 Mar 2022 20:43:27 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"data\": [\n        {\n            \"p\": \"/WebAPIServer\",\n            \"v\": 200,\n            \"q\": 0\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "id": "9d2625b2-f645-4660-a68c-cd48592f5c84"
@@ -2167,22 +2210,22 @@
   ],
   "variable": [
     {
-      "id": "cf233f1e-9501-4c01-a2a0-c13fc590d90f",
+      "id": "d5da8e05-32d8-4871-98c1-c19e67533718",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "c881b0f7-621a-4e32-8a73-f4d3195954d6",
+      "id": "462c30c0-de20-4448-9b03-ddaa4bcdb6b7",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "8b39f2a5-b03c-4259-838a-8d93b79f1ebf",
+      "id": "3729f382-2c43-4321-9a7e-de9b0750be45",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "a3b510c9-2132-4389-a9a6-79fddec0e355",
+      "id": "2bc8d145-9adc-4287-be9d-5d340df01cf2",
       "key": "access_token",
       "value": ""
     }
