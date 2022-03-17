@@ -2091,8 +2091,18 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": []
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"data\": {\r\n        \"func\": \"new_avant_opc_da\",\r\n        \"farg\": {\r\n            \"core_name\": \"sc1mv366331\",\r\n            \"connector_name\": \"sc1mv366331\",\r\n            \"hostname\": \"LABDTSG74724VT\"\r\n        },\r\n        \"lib\": \"avantIntegration\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url}}/api/v2/execfunction"
           },
           "response": []
         }
@@ -2157,22 +2167,22 @@
   ],
   "variable": [
     {
-      "id": "e4b2877c-9f9e-408b-9bf0-41c38133349b",
+      "id": "cf233f1e-9501-4c01-a2a0-c13fc590d90f",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "8f8f33bf-6efc-4e24-8463-2679ec6758fb",
+      "id": "c881b0f7-621a-4e32-8a73-f4d3195954d6",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "e77140e6-0f42-4d1c-962a-c72d3339de8c",
+      "id": "8b39f2a5-b03c-4259-838a-8d93b79f1ebf",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "e3875ac3-0c1e-4d28-a8dd-3a9c39293324",
+      "id": "a3b510c9-2132-4389-a9a6-79fddec0e355",
       "key": "access_token",
       "value": ""
     }
