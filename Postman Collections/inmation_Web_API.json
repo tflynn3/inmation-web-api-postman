@@ -2085,7 +2085,7 @@
           ]
         },
         {
-          "name": "New Request",
+          "name": "Create New Avant",
           "id": "cebda199-a553-457f-a129-f7f0cada29ea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -2157,22 +2157,22 @@
   ],
   "variable": [
     {
-      "id": "d34852bc-2d04-4a96-87c0-2f37044affee",
+      "id": "0d35648c-b3ae-45e6-b988-4eee8c7c1dff",
       "key": "user_domain",
       "value": ""
     },
     {
-      "id": "ec11c671-24aa-4d6e-87ec-692d578fe9b0",
+      "id": "e5362cd4-b0f9-4f9d-b01d-bf5c20cfcdad",
       "key": "user_name",
       "value": ""
     },
     {
-      "id": "7879bd82-066e-4487-8c50-4fb9db829130",
+      "id": "e9e7475b-d568-4cd2-b756-4c11144b3758",
       "key": "user_password",
       "value": ""
     },
     {
-      "id": "0f676bf6-6341-46df-b3fe-06c80e15254e",
+      "id": "2e6cf4f0-c6f1-4fd8-bbf3-c1927f7df40e",
       "key": "access_token",
       "value": ""
     }
