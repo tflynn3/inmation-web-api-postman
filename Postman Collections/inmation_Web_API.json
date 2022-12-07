@@ -425,7 +425,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{base_url}}/api/v2/read?identifier={{test_tag}}.OpcEngUnit&fields=p,t,v",
+									"raw": "{{base_url}}/api/v2/read?identifier=/WebAPIServer&fields=p,t,v",
 									"host": [
 										"{{base_url}}"
 									],
@@ -437,7 +437,7 @@
 									"query": [
 										{
 											"key": "identifier",
-											"value": "{{test_tag}}.OpcEngUnit"
+											"value": "/WebAPIServer"
 										},
 										{
 											"key": "fields",
@@ -2244,22 +2244,22 @@
 	],
 	"variable": [
 		{
-			"id": "719069d6-a4c6-4f71-8038-7180d3720dc8",
+			"id": "a8cc3078-7892-42c6-8e3a-06ca645e4e6c",
 			"key": "user_domain",
 			"value": ""
 		},
 		{
-			"id": "a5d50bd5-3e82-41a6-a3af-80857172b54f",
+			"id": "3d3580a3-2d75-407c-827f-7ca106747f7c",
 			"key": "user_name",
 			"value": ""
 		},
 		{
-			"id": "97aadffd-d3d3-4e38-9af6-ad147f2ecd98",
+			"id": "6d19b0bf-7407-4eb1-90af-62e588c6cd3e",
 			"key": "user_password",
 			"value": ""
 		},
 		{
-			"id": "dbca9ac4-ff19-4cd9-bbaf-23c8773b3b28",
+			"id": "934d00f8-588f-48ff-8fb6-b41f66b83d8a",
 			"key": "access_token",
 			"value": ""
 		}
