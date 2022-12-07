@@ -326,6 +326,160 @@
 					]
 				},
 				{
+					"name": "Read Copy",
+					"id": "80a700a7-0723-407a-8bc3-f2ef08a54c76",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v2/read?identifier={{test_tag}}&fields=ALL",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"read"
+							],
+							"query": [
+								{
+									"key": "identifier",
+									"value": "{{test_tag}}",
+									"description": "Item or property path."
+								},
+								{
+									"key": "fields",
+									"value": "ALL",
+									"description": "Comma separated string to customize which fields should be included in the response, by default 'i,p,v,q,t'. Provide 'ALL' to include all fields."
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "b9b79f2d-877a-4894-afd4-d9d08d4aa09a",
+							"name": "Read",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v2/read?identifier={{test_tag}}&fields=p,t,v,q",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v2",
+										"read"
+									],
+									"query": [
+										{
+											"key": "identifier",
+											"value": "{{test_tag}}",
+											"description": "Item or property path."
+										},
+										{
+											"key": "fields",
+											"value": "p,t,v,q",
+											"description": "Comma separated string to customize which fields should be included in the response, by default 'i,p,v,q,t'. Provide 'ALL' to include all fields."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "114"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "deflate"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-HTTPAPI/2.0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Feb 2022 18:28:35 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"p\": \"/System/SC1MV366331/Performance Counter/Core/CPU\",\n            \"q\": 0,\n            \"t\": \"2022-02-10T18:28:35.325Z\",\n            \"v\": 45.1171875\n        }\n    ]\n}"
+						},
+						{
+							"id": "a5185fcb-2b07-48b9-96d2-5a62fe946c90",
+							"name": "Read All Fields",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v2/read?identifier={{test_tag}}&fields=ALL",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v2",
+										"read"
+									],
+									"query": [
+										{
+											"key": "identifier",
+											"value": "{{test_tag}}",
+											"description": "Item or property path."
+										},
+										{
+											"key": "fields",
+											"value": "ALL",
+											"description": "Comma separated string to customize which fields should be included in the response, by default 'i,p,v,q,t'. Provide 'ALL' to include all fields."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "deflate"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-HTTPAPI/2.0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Feb 2022 19:00:51 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"data\": [\n        {\n            \"i\": 281680568713216,\n            \"p\": \"/System/SC1MV366331/Performance Counter/Core/CPU\",\n            \"q\": 0,\n            \"qs\": 0,\n            \"qstxt\": \"Good\",\n            \"qtxt\": \"Good\",\n            \"t\": \"2022-02-10T19:00:50.325Z\",\n            \"v\": 46.875\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
 					"name": "Read Property",
 					"id": "eb1ac40d-c121-4c95-af55-9501f2d59cb7",
 					"protocolProfileBehavior": {
@@ -2244,22 +2398,22 @@
 	],
 	"variable": [
 		{
-			"id": "a8cc3078-7892-42c6-8e3a-06ca645e4e6c",
+			"id": "4d4b6e49-5340-49bb-8def-a1826535a34f",
 			"key": "user_domain",
 			"value": ""
 		},
 		{
-			"id": "3d3580a3-2d75-407c-827f-7ca106747f7c",
+			"id": "10f77eb2-a966-4d26-a09c-e91671b59f41",
 			"key": "user_name",
 			"value": ""
 		},
 		{
-			"id": "6d19b0bf-7407-4eb1-90af-62e588c6cd3e",
+			"id": "30200ae7-7a40-4ccf-9464-40cea5de7dca",
 			"key": "user_password",
 			"value": ""
 		},
 		{
-			"id": "934d00f8-588f-48ff-8fb6-b41f66b83d8a",
+			"id": "17778187-2801-44b4-9cab-04581034c458",
 			"key": "access_token",
 			"value": ""
 		}
