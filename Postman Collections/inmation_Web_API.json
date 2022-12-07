@@ -2398,22 +2398,22 @@
 	],
 	"variable": [
 		{
-			"id": "f65483b4-1f3b-4e05-9d26-a38da7bf4a65",
+			"id": "b7ecbcb2-1742-4f2f-aa59-5c8c717001ff",
 			"key": "user_domain",
 			"value": ""
 		},
 		{
-			"id": "c8275296-bb4e-4f09-9df1-c1760c221bed",
+			"id": "3567bd40-a296-4388-b432-4c9fd5432579",
 			"key": "user_name",
 			"value": ""
 		},
 		{
-			"id": "b8272223-ddde-4c22-8959-e08b79eaaf61",
+			"id": "7042d88c-2739-4143-8970-7cae333eb8c5",
 			"key": "user_password",
 			"value": ""
 		},
 		{
-			"id": "4c1aa911-30c7-4a3d-8387-69924be86765",
+			"id": "41799ff3-5c01-4b38-9c3e-faec7c4afd88",
 			"key": "access_token",
 			"value": ""
 		}
