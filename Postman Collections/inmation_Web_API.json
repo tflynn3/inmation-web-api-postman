@@ -417,6 +417,40 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"data\": [\n        {\n            \"p\": \"/System/SC1MV366331/Performance Counter/Core/CPU.OpcEngUnit\",\n            \"t\": \"2022-02-09T15:32:33.322Z\",\n            \"v\": \"%\"\n        }\n    ]\n}"
+						},
+						{
+							"id": "50bd050f-350e-4913-937f-0cb353ecf7f9",
+							"name": "Read Property",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/v2/read?identifier={{test_tag}}.OpcEngUnit&fields=p,t,v",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"v2",
+										"read"
+									],
+									"query": [
+										{
+											"key": "identifier",
+											"value": "{{test_tag}}.OpcEngUnit"
+										},
+										{
+											"key": "fields",
+											"value": "p,t,v"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
 					]
 				},
@@ -2210,22 +2244,22 @@
 	],
 	"variable": [
 		{
-			"id": "16adb0cc-923e-469d-b85c-849b96d66675",
+			"id": "6fd5d891-0757-43dd-ae89-efda4026c90f",
 			"key": "user_domain",
 			"value": ""
 		},
 		{
-			"id": "f7c03b5a-12aa-4b06-95a6-acab252c70de",
+			"id": "252b005d-8d13-439b-9c51-87c6f4601825",
 			"key": "user_name",
 			"value": ""
 		},
 		{
-			"id": "031a91f4-0ddd-4857-85be-082ab47129c9",
+			"id": "9945bb27-e905-4c8f-a1d4-244e05b06a52",
 			"key": "user_password",
 			"value": ""
 		},
 		{
-			"id": "b11db4e6-afbe-423f-8c0a-87b624193d85",
+			"id": "5d0d4807-ca30-4ba6-a1b9-a553f5d450e7",
 			"key": "access_token",
 			"value": ""
 		}
