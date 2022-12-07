@@ -420,7 +420,7 @@
 						},
 						{
 							"id": "50bd050f-350e-4913-937f-0cb353ecf7f9",
-							"name": "Read Property",
+							"name": "Read Property of Server Object",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -2244,22 +2244,22 @@
 	],
 	"variable": [
 		{
-			"id": "6fd5d891-0757-43dd-ae89-efda4026c90f",
+			"id": "719069d6-a4c6-4f71-8038-7180d3720dc8",
 			"key": "user_domain",
 			"value": ""
 		},
 		{
-			"id": "252b005d-8d13-439b-9c51-87c6f4601825",
+			"id": "a5d50bd5-3e82-41a6-a3af-80857172b54f",
 			"key": "user_name",
 			"value": ""
 		},
 		{
-			"id": "9945bb27-e905-4c8f-a1d4-244e05b06a52",
+			"id": "97aadffd-d3d3-4e38-9af6-ad147f2ecd98",
 			"key": "user_password",
 			"value": ""
 		},
 		{
-			"id": "5d0d4807-ca30-4ba6-a1b9-a553f5d450e7",
+			"id": "dbca9ac4-ff19-4cd9-bbaf-23c8773b3b28",
 			"key": "access_token",
 			"value": ""
 		}
